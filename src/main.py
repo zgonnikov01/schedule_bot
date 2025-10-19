@@ -24,8 +24,10 @@ dp.include_routers(
     handlers.admin.basic.router,
 )
 
+
 async def on_startup():
     pass
+
 
 dp.startup.register(on_startup)
 
@@ -39,6 +41,7 @@ async def main():
         await dp.start_polling(bot)
     finally:
         await bot.session.close()
+
 
 if __name__ == "__main__":
     asyncio.run(main())
