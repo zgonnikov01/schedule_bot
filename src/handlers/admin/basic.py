@@ -1,7 +1,6 @@
-from aiogram import Router, Bot, F
-from aiogram.filters import Command, StateFilter, CommandStart
+from aiogram import Router
+from aiogram.filters import CommandStart
 from aiogram.types import Message
-from aiogram.fsm.context import FSMContext
 
 from config import ADMIN_IDS
 
